@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Drink Water Reminder</string>
+    <string name="your_target">Your Target : 10 (2L)</string>
+    <string name="you_drink">You Drink :</string>
+    <string name="add_reminder">Add Reminder</string>
+</resources>
