@@ -32,8 +32,8 @@ class SendNotifications(val context: Context, workerParams: WorkerParameters) : 
     private fun notificationMaker(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             builder = NotificationCompat.Builder(context, CHANNEL_ID)
-                .setContentTitle("deneme")
-                .setContentText("deneme")
+                .setContentTitle("Drink Water")
+                .setContentText("Don't forget to drink water")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(context.resources, R.drawable.ic_launcher_background))
