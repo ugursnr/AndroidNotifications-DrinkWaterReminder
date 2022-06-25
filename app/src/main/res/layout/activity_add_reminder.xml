@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReminderActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/choose_an_interval_minutes"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        />
+    <EditText
+        android:id="@+id/intervalET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_an_interval"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="30"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/currentReminderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_current_reminder_mins"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/deleteReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/delete_reminder"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+</LinearLayout>

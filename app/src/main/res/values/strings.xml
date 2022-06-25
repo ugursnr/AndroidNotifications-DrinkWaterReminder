@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Drink Water Reminder</string>
-    <string name="your_target">Your Target : 10 (2L)</string>
+    <string name="your_target">Your Target : 10 Glasses (2L)</string>
     <string name="you_drink">You Drink :</string>
     <string name="add_reminder">Add Reminder</string>
+    <string name="choose_an_interval_minutes">Choose an interval (minutes)</string>
+    <string name="type_an_interval">Enter an interval</string>
+    <string name="submit">SUBMIT</string>
+    <string name="your_current_reminder_mins">Your current reminder (mins) : 0</string>
+    <string name="delete_reminder">DELETE REMINDER</string>
 </resources>

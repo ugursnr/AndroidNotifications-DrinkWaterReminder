@@ -1,6 +1,7 @@
 package com.ugurrsnr.drinkwaterreminder
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,15 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("com.ugurrsnr.drinkwaterreminder", MODE_PRIVATE)
         var currentDrink : Int = sharedPreferences.getInt("currentDrink", 0)
-        binding.drinkTodayTV.text = "You Drink : ${currentDrink.toString()}"
+        binding.drinkTodayTV.text = "You Drink : ${currentDrink.toString()} Glasses of Water"
         colorChanger(currentDrink)
-
 
         binding.apply {
 
             upButton.setOnClickListener {
                 currentDrink++
-                drinkTodayTV.text = "You Drink : ${currentDrink.toString()}"
+                drinkTodayTV.text = "You Drink : ${currentDrink.toString()} Glasses of Water"
                 colorChanger(currentDrink)
                 sharedPreferences.edit().putInt("currentDrink", currentDrink).apply()
             }
@@ -41,13 +41,17 @@ class MainActivity : AppCompatActivity() {
                     currentDrink = 0
                 }
                 colorChanger(currentDrink)
-                drinkTodayTV.text = "You Drink : ${currentDrink.toString()}"
+                drinkTodayTV.text = "You Drink : ${currentDrink.toString()} Glasses of Water"
                 sharedPreferences.edit().putInt("currentDrink", currentDrink).apply()
 
             }
 
         }
+        binding.addReminderButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, AddReminderActivity::class.java)
 
+            startActivity(intent)
+        }
 
     }
 
