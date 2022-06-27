@@ -49,12 +49,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.addReminderButton.setOnClickListener {
             val intent = Intent(this@MainActivity, AddReminderActivity::class.java)
-
             startActivity(intent)
         }
 
     }
-
     private fun colorChanger(currentDrink : Int){
 
         val redColor = ContextCompat.getColor(applicationContext,R.color.red)
